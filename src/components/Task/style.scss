@@ -1,0 +1,24 @@
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    &_name{
+        margin: 0;
+        font-weight: 600;
+        height: 19px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    &--done{
+        color: green;
+    }
+    &_groups-btn{
+        display: flex;
+        column-gap: 10px;
+    }
+    &_btn-done, &btn-del{
+        cursor: pointer;
+    }
+}
